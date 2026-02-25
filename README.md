@@ -40,4 +40,4 @@ git clone https://github.com/tu-usuario/von-neumann-chaotic-analyzer.git
 cd von-neumann-chaotic-analyzer
 
 # Ejecutar (requiere root)
-python has10.py
+python von_aizawa.py

@@ -53,7 +53,7 @@ class ImageSaver:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.current_session = os.path.join(self.base_path, timestamp)
         os.makedirs(self.current_session, exist_ok=True)
-        print(f"\n📁 Imágenes: {self.current_session}")
+        print(f"\nImágenes: {self.current_session}")
 
     def save_plot(self, plt_figure, name):
         if not plt_figure:
@@ -953,7 +953,7 @@ samples)
 # ============================================
 def signal_handler(sig, frame):
     print("\n\nDeteniendo servidor...")
-    print("\n📊 Estadísticas del procesador adaptativo:")
+    print("\nEstadísticas del procesador adaptativo:")
     print(f"   Generaciones totales: {generator.stats['total_generation
 s']}")
     print(f"   Modo mínimo (corr<0.1): {generator.stats['low_corr_count
@@ -970,17 +970,17 @@ if __name__ == '__main__':
     print("\n" + "="*60)
     print(" GENERADOR CAÓTICO AIZAWA - VERSIÓN MEJORADA CON TABLAS")
     print("="*60)
-    print(f"\n📊 matplotlib: {'✓' if MATPLOTLIB_OK else '✗'}")
-    print(f"📈 scipy: {'✓' if SCIPY_OK else '✗'}")
-    print(f"🔧 root: {'✓' if generator.has_root else '✗ (modo simulació
+    print(f"\nmatplotlib: {'✓' if MATPLOTLIB_OK else '✗'}")
+    print(f"scipy: {'✓' if SCIPY_OK else '✗'}")
+    print(f" root: {'✓' if generator.has_root else '✗ (modo simulació
 n)'}")
-    print(f"\n✨ NOVEDADES:")
+    print(f"\n NOVEDADES:")
     print(f"   • Procesador adaptativo (no empeora datos buenos)")
     print(f"   • Prueba Chi-cuadrado para uniformidad")
     print(f"   • Indicadores visuales de calidad")
-    print(f"   • 📊 4 tablas de evolución temporal")
-    print(f"   • 🔗 Atractor acoplado a temperatura")
-    print(f"\n🌐 http://localhost:5000")
+    print(f"   • 4 tablas de evolución temporal")
+    print(f"   • Atractor acoplado a temperatura")
+    print(f"\n http://localhost:5000")
     print("\nPresiona Ctrl+C para detener")
     print("="*60)
 
